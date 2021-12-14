@@ -1,0 +1,100 @@
+
+body {
+    /* background-color: rgba(83, 23, 23, 0.411); */
+    background-image: linear-gradient(to bottom right, #B62A3D, #EDCB64, #B5966D, #cc936d, #CECD7B);
+    overflow-x: hidden;
+}
+
+#sections {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    top: 60px;
+    z-index: 0;
+    margin-right: 15%;
+}
+
+.categoryLegend {
+    font-family: "Futura";
+}
+
+
+
+.step {
+    margin-bottom: 100px;
+    height: 700px;
+    font-family: "Futura";
+    font-size: 24;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-align: justify;
+    
+}
+
+h1, h2 {
+    font-family: moret, serif;
+
+    font-weight: 700;
+    
+    font-style: italic;
+    line-height: 50px;
+}
+
+h1 {
+    font-size: 75px;
+}
+h2 {
+    font-size: 50px;
+
+}
+
+#graphic {
+    margin: auto;
+    width: 1500px;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-around;
+}
+
+#vis {
+    display: inline-block;
+    margin-top: 7%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    margin-left: 0;
+    height: 500px;
+    width: 1000px;
+}
+
+.tick line {
+    stroke: 'red'
+}
+
+#tooltip {
+    position: absolute;
+    display: none;
+    background: rgb(243, 188, 188);
+    border-radius: 3px;
+    box-shadow: -3px 3px 15px #939393;
+    color: rgb(52, 51, 129);
+    padding: 6px;
+    font-family: "Futura";
+    font-size: 1.1em;
+    max-width: 400px;
+    z-index: 100;
+}
+
+svg circle:hover{
+    cursor: pointer;
+}
+
+.swatch {
+    fill: #FFFDD0;
+}
+.sizeLegend2 {
+    opacity: 0.7;
+}
+
+
+

@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src = 'd3.js'></script>
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/njr2dak.css">
+
+
+
+
+
+    <meta property='og:title' content='Wine and ratings'/>
+
+
+
+    <title>Best College Majors</title>
+</head>
+
+
+<body>
+
+
+
+  
+    <div id="Wine">
+      <script>
+      var window = this;
+
+      $.fn.followTo = function (pos) {
+        var $this = this,
+            $window = $(window);
+    
+        $window.scroll(function (e) {
+            if ($window.scrollTop() > pos) {
+                $this.css({
+                    position: 'absolute',
+                    top: pos
+                });
+            } else {
+                $this.css({
+                    position: 'fixed',
+                    top: 0
+                });
+            }
+        });
+    };
+    
+    $('#wine').followTo(250);</script>
+
+
+    <div id="tooltip"></div>
+    <div id="graphic">
+        <div id="sections">
+            <section class="step">
+                <div class="title"></div>
+                <br><br>
+                <h1>Put a Cork <br> In It</h1>
+                <h2>Does Region Really Matter When It Comes To Red Wine Quality?</h2>
+          
+                <p>
+                    Vivino is an app used by many wine enthusiasts. The app allows its user to rate the wine they drink on an 1-5 scale. Using the data from the user ratings. I hope to visualize the connection between wine ratings and countries and regions
+                    
+                </p>
+                
+            </section>
+            <section class="step">
+                <p>
+If we group our countries together by region, we can see that most of the wine reviewed comes from Europe. The sizes of the circles are defined by the average rating of wines from that country. Because of that, Moldova has the biggest circle, while China has the smallest one
+                <br>
+                </p>
+                <svg id = 'legend' width = '400px' height = '500px'></svg>
+            </section>
+            <section class = 'step'>
+                <svg id = 'legend2' width = '400px' height = '500px'></svg><br><br>
+                Africa has the highest average rating, and Asia has the lowest rating. Europe, the biggest producer, has an average rating of 3.86.
+            </section>
+            <section class="step">
+                <br><br><br><br><br><br>
+                <p>
+                   This histogram shows us a more detailed view of the average ratings by country. Intrestingly, almost half of the countris are rated a 3.8. 
+                </p>
+                
+            </section>
+
+           
+
+        </div>
+            
+    <script src = 'scroller.js'></script>
+    <script src = 'sections.js'></script>
+        <div id="vis">
+        </div>
+
+
+
+    </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
